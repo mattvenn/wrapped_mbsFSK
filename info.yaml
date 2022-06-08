@@ -6,14 +6,15 @@ project:
   picture: docs/empty.png
   author: "James Rosenthal"
   license: LICENSE
+  waive_module_test: 'please add later'
 
 # optional interfaces you want to use: gpio, la1, la2, la3, irq, clk2, wishbone & openram
 interfaces: ['la1', 'gpio']
 
 # test within caravel
 caravel_test:
-  recipe: "make"
-  directory: "caravel_test"
+  recipe: "coco_test"
+  directory: "mbsFSK_caravel_test"
   id: 10
   module_name: "wrapped_mbsFSK"
 
@@ -34,7 +35,6 @@ openlane:
 
 # source required for various configs and module instantiation
 source:
-    - mbs_1a/src/user_project_wrapper.v 
     - mbs_1a/src/wrapped_mbsFSK.v
     - mbs_1a/src/LFSRmod.v
     - mbs_1a/src/mbsFSK.v

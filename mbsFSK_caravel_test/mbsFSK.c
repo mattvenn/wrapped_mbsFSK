@@ -39,13 +39,10 @@ void main()
 
 	*/
 
-    // 2 inputs
-	reg_mprj_io_8 =   GPIO_MODE_USER_STD_INPUT_NOPULL;
-	reg_mprj_io_9 =   GPIO_MODE_USER_STD_INPUT_NOPULL;
-
     // 2 outputs
-	reg_mprj_io_14 =  GPIO_MODE_USER_STD_OUTPUT;
-	reg_mprj_io_15 =  GPIO_MODE_USER_STD_OUTPUT;
+	reg_mprj_io_8 =   GPIO_MODE_USER_STD_OUTPUT;
+	reg_mprj_io_9 =   GPIO_MODE_USER_STD_OUTPUT;
+
 
     /* Apply configuration */
     reg_mprj_xfer = 1;

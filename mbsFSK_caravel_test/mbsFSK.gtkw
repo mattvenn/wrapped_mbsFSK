@@ -1,0 +1,45 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Wed Jun  8 21:10:38 2022
+[*]
+[dumpfile] "(null)"
+[savefile] "/home/matt/work/asic-workshop/shuttle6/zero_to_asic_mpw6/verilog/dv/mbsFSK.gtkw"
+[timestart] 0
+[size] 1679 780
+[pos] -1 -1
+*-27.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] mbsFSK_tb.
+[treeopen] mbsFSK_tb.uut.
+[treeopen] mbsFSK_tb.uut.mprj.
+[sst_width] 233
+[signals_width] 134
+[sst_expanded] 1
+[sst_vpaned_height] 207
+@28
+mbsFSK_tb.RSTB
+mbsFSK_tb.USER_VDD1V8
+mbsFSK_tb.USER_VDD3V3
+mbsFSK_tb.VDD1V8
+mbsFSK_tb.VDD3V3
+mbsFSK_tb.VSS
+mbsFSK_tb.clk
+mbsFSK_tb.flash_clk
+mbsFSK_tb.flash_csb
+mbsFSK_tb.flash_io0
+mbsFSK_tb.flash_io1
+mbsFSK_tb.gpio
+mbsFSK_tb.input8
+mbsFSK_tb.input9
+@22
+mbsFSK_tb.mprj_io[37:0]
+@28
+mbsFSK_tb.output14
+mbsFSK_tb.output15
+mbsFSK_tb.power1
+mbsFSK_tb.power2
+mbsFSK_tb.power3
+mbsFSK_tb.power4
+@29
+mbsFSK_tb.uut.mprj.wrapped_mbsFSK_10.active
+[pattern_trace] 1
+[pattern_trace] 0

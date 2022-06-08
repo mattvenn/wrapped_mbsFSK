@@ -18,11 +18,11 @@
 `timescale 1 ns / 1 ps
 
 // change module name to something that suits your project
-module project_tb;
+module mbsFSK_tb;
     initial begin
         // change to suit your project
-        $dumpfile ("project.vcd");
-        $dumpvars (0, project_tb);
+        $dumpfile ("mbsFSK_tb.vcd");
+        $dumpvars (0, mbsFSK_tb);
         #1;
     end
 
@@ -84,7 +84,7 @@ module project_tb;
 
     spiflash #(
         // change the hex file to match your project
-        .FILENAME("project.hex")
+        .FILENAME("mbsFSK.hex")
     ) spiflash (
         .csb(flash_csb),
         .clk(flash_clk),
