@@ -30,7 +30,7 @@ wrapper_proof:
 
 # openlane config, used in case I need to re-harden
 openlane:
-  config: "config.tcl"
+  config: "mbs_1a/config.tcl"
 
 # source required for various configs and module instantiation
 source:
