@@ -1,0 +1,17 @@
+[options]
+mode prove
+
+[engines]
+smtbmc
+
+[script]
+read -formal wrapped_mbsFSK.v mbsFSK.v LFSRmod.v SymbLUT.v sampleClockGen.v
+prep -top wrapped_mbsFSK
+
+[files]
+wrapped_mbsFSK.v
+src/mbsFSK.v
+properties.v
+src/LFSRmod.v
+src/SymbLUT.v
+src/sampleClockGen.v

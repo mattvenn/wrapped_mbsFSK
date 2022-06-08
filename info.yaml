@@ -1,10 +1,10 @@
 --- 
 # information
 project: 
-  title: "title"
-  description: "description"
+  title: "IFFT shift register"
+  description: "shifts out the IFFT of a pseudo-random bit sequence spread in the frequency domain."
   picture: docs/empty.png
-  author: "Author"
+  author: "James Rosenthal"
   license: LICENSE
 
 # optional interfaces you want to use: gpio, la1, la2, la3, irq, clk2, wishbone & openram
@@ -12,15 +12,15 @@ interfaces: ['la1', 'gpio']
 
 # test within caravel
 caravel_test:
-  recipe: "coco_test"
+  recipe: "make"
   directory: "caravel_test"
-  id: 1
-  module_name: "wrapped_project"
+  id: 10
+  module_name: "wrapped_mbsFSK"
 
 # module test
 module_test:
   recipe: "all" 
-  directory: "project directory"
+  directory: "."
   makefile: "Makefile"
 
 # run the wrapper formal proof
@@ -34,12 +34,16 @@ openlane:
 
 # source required for various configs and module instantiation
 source:
-    - wrapper.v
-    - other source files here
+    - mbs_1a/src/user_project_wrapper.v 
+    - mbs_1a/src/wrapped_mbsFSK.v
+    - mbs_1a/src/LFSRmod.v
+    - mbs_1a/src/mbsFSK.v
+    - mbs_1a/src/sampleClockGen.v
+    - mbs_1a/src/SymbLUT.v
 
 # gds - check nothing on metal 5, DRC & LVS
 final:
   directory: "final"
-  gds_filename: "gds/project.gds"
-  lvs_filename: "verilog/gl/project.v"
-  lef_filename: "lef/project.lef"
+  gds_filename: "gds/wrapped_mbsFSK.gds"
+  lvs_filename: "verilog/gl/wrapped_mbsFSK.v"
+  lef_filename: "lef/wrapped_mbsFSK.lef"

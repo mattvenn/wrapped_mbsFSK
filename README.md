@@ -2,8 +2,7 @@
 
 # Information about your project
 
-This is a template project you can clone and use to take part in the multi project submission to the
-Google/Efabless/Skywater shuttle.
+This project outputs IFFT symbols based on pseudo-random incoming data.
 
 The tools that will test and create the aggregated design are here: https://github.com/mattvenn/multi_project_tools
 
