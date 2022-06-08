@@ -59,8 +59,8 @@ docs:
 
 projects:
     # change the name, repo and the commit to match your project. You can set the commit to be a branch or a gitsha
-    rgb_mixer:
-        repo:   'https://github.com/mattvenn/wrapped_rgb_mixer'
-        commit: 'mpw5'
+    wrapped_mbsFSK:
+        repo:   'https://github.com/jdrosent/wrapped_mbsFSK'
+        commit: 'main'
         pos:    '0 0 N'
 
